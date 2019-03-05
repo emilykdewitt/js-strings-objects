@@ -74,6 +74,7 @@ let employee = {
   }
 
 let eom = "employee_of_the_month";
+//because we want the key to be a string (employee_of_the_month)
 employee.eom = false;
 
 console.log(`Our company's lawyer is ${employee.name}`);
@@ -89,3 +90,9 @@ const isEmployeeOfMonth = (answer) => {
 }
 
 console.log(`Jeff ${isEmployeeOfMonth(employee.eom)}`);
+
+printToDom('jeffStuff', `1. Our company's lawyer is ${employee.name}. <br>`);
+printToDom(`jeffStuff`, `2. Jeff was hired on ${employee['hire_date']}. <br>`);
+printToDom(`jeffStuff`, `3. Jeff has ${employee.vacation_days} vacation days.`);
+
+let lawyerInfo = ["Jeff Winger", 37, "legal", "09/22/2010", 20];
